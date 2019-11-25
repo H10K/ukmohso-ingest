@@ -1,7 +1,7 @@
-VERSION = 0.1.0
+VERSION = 0.1.1
 
 all: clean lint
-	./ukmohso-ingest.py -d -f ukmohso-ingest.yml
+	./ukmohso-ingest.py -f ukmohso-ingest.yml
 
 changelog:
 	sed "s/^unreleased_version_label.*/unreleased_version_label = '$(VERSION)'/" \
